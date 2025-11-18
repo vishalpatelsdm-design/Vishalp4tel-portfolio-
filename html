@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio — Your Name" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">YourName</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m Your Name</h1>
+          <p class="lead">Frontend developer & designer — I build accessible, responsive web experiences.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#projects">See my work</a>
+            <a class="btn outline" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace with your photo: assets/profile.jpg -->
+          <img src="assets/profile.jpg" alt="Your Name" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p>I’m a web developer focused on building performant and accessible user interfaces. I enjoy working on product-focused teams and shipping delightful user experiences.</p>
+        <div class="about-grid">
+          <div>
+            <h3>Location</h3>
+            <p>City, Country</p>
+          </div>
+          <div>
+            <h3>Currently</h3>
+            <p>Open to new opportunities · Freelance</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p><a href="mailto:you@example.com">you@example.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="muted">Selected projects — click to view live demo or repo.</p>
+        <div class="grid projects-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p class="muted">Short description of the project. Tech: HTML, CSS, JS</p>
+              <p class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p class="muted">Short description of the project. Tech: React, Node</p>
+              <p class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p class="muted">Short description of the project. Tech: CSS animations</p>
+              <p class="card-links">
+                <a href="#" target="_blank" rel="noreferrer">Live</a> · <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Accessibility</span>
+          <span class="skill">Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Want to work together or have a question? Send a message.</p>
+        <div class="contact-grid">
+          <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <p><button type="submit" class="btn primary">Send Email</button></p>
+          </form>
+
+          <aside class="contact-aside">
+            <h3>Other ways to reach me</h3>
+            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a></p>
+            <p>LinkedIn: <a href="#" target="_blank" rel="noreferrer">linkedin.com/in/yourname</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
